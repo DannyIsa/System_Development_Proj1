@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include "library.h"
 
-int main(){
-    printf("Hello world");
+int main()
+{
+    isArmstrong(123468);
     return 0;
 }
