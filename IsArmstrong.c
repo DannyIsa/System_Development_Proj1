@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "utils/power.c"
+#include "library.h"
 
 // int power(int x, int y);
 
