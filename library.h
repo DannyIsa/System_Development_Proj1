@@ -3,7 +3,7 @@
 
 // #include "utils/power.c"
 
-int isArmstrong(int x);
 int power(int x, int y);
+int isArmstrong(int x);
 
 #endif

@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include "library.h"
 
+int isArmstrong(int x);
 int main()
 {
-    isArmstrong(123468);
+    int num = 1634;
+    isArmstrong(1634);
     return 0;
 }

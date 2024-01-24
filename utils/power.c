@@ -1,3 +1,4 @@
+#include "../library.h"
 int power(int x, int y)
 {
     if (y == 0)
