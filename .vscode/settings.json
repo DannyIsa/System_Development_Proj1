@@ -6,7 +6,7 @@
     "makefile.launchConfigurations": [
         {
             "cwd": "/home/vboxuser/Desktop/System_Development_Proj1",
-            "binaryPath": "/home/vboxuser/Desktop/System_Development_Proj1/mains",
+            "binaryPath": "/home/vboxuser/Desktop/System_Development_Proj1/app",
             "binaryArgs": []
         }
     ]
