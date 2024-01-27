@@ -1,12 +1,15 @@
-int squareRoot(int x){
-    if (x < 0){
+int squareRoot(int x)
+{
+    if (x < 0)
+    {
         return -1;
     }
     double check = num / 2;
     int prevCheck;
-    do{
+    do
+    {
         prevCheck = check;
-        check =(check + num / check)/2;
-    }while (check * check != num && check != prevCheck);
+        check = (check + num / check) / 2;
+    } while (check * check != num && check != prevCheck);
     return check;
 }

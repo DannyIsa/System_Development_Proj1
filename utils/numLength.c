@@ -1,10 +1,12 @@
+#include "../library.h"
+
 int numLength(int x)
 {
-    int xLength = x;
+    int xLength = 0;
     while (x > 0)
     {
         xLength++;
         x /= 10;
     }
-    return x;
+    return xLength;
 }

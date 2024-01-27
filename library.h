@@ -7,5 +7,6 @@ int numLength(int x);
 
 // Assignment functions
 int isArmstrong(int x);
+int isPalindrome(int x);
 
 #endif
