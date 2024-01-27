@@ -1,5 +1,3 @@
-#include "../library.h"
-
 int numLength(int x)
 {
     int xLength = 0;

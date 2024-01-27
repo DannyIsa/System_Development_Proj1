@@ -1,6 +1,6 @@
 #include "library.h"
 
-int isArmstrong(int x)
+int isStrong(int x)
 {
     int tempX1 = x;
     int xLength = numLength(x);
@@ -12,17 +12,13 @@ int isArmstrong(int x)
         tempX1 /= 10;
     }
 
-    int armstrong = 0;
+    int strong = 0;
     for (int i = 0; i < xLength; i++)
     {
-        armstrong += power(digits[i], xLength);
+        strong += factorial(digits[i]);
     }
 
-    if (x == armstrong)
-    {
-
+    if (strong == x)
         return 1;
-    }
-
     return 0;
 }
