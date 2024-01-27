@@ -1,4 +1,4 @@
-app: main.o IsArmstrong.o IsPalindrome.o IsPrime.o IsStrong.o power.o numLength.o factorial.o
+app: main.o advancedClassificationRecursion.o advancedClassificationLoop.o basicClassification.o power.o numLength.o factorial.o
 	gcc $^ -o app
 
 main.o: main.c library.h
@@ -15,17 +15,14 @@ factorial.o: utils/factorial.c
 	gcc -c utils/factorial.c
 
 ### Assignment Functions
-IsArmstrong.o: IsArmstrong.c library.h
-	gcc -c IsArmstrong.c
+basicClassification.o: basicClassification.c library.h
+	gcc -c basicClassification.c
 
-IsPalindrome.o: IsPalindrome.c library.h
-	gcc -c IsPalindrome.c
+advancedClassificationLoop.o: advancedClassificationLoop.c library.h
+	gcc -c advancedClassificationLoop.c
 
-IsPrime.o: IsPrime.c library.h
-	gcc -c IsPrime.c
-
-IsStrong.o: IsStrong.c library.h
-	gcc -c IsStrong.c
+advancedClassificationRecursion.o: advancedClassificationRecursion.c library.h
+	gcc -c advancedClassificationRecursion.c
 
 ### Clean
 clean:
