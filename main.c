@@ -4,6 +4,14 @@
 int isArmstrong(int x);
 int main()
 {
+    int firstNum;
+    int secNum;
+    printf("Enter First Num");
+    scanf( "%d" , &firstNum);
+    printf("Enter sec Num");
+    scanf("%d" , &secNum);
+    
+
     printf("IsArmstrong 1634 = %d\n", isArmstrong(1634));
     printf("Ispalindrome 12321 = %d\n", isPalindrome(12321));
     printf("IsPrime 17 = %d\n", isPrime(17));
