@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "stdio.h": "c",
-        "library.h": "c"
+        "library.h": "c",
+        "numclass.h": "c"
     },
     "makefile.launchConfigurations": [
         {
