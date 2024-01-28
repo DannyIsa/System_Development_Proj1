@@ -21,7 +21,7 @@ int main()
 
     for (int currentNum = firstNum; currentNum <= secNum; currentNum++)
     {
-        if (isArmstrongRecursion(currentNum))
+        if (isArmstrong(currentNum))
             printf("%d ", currentNum);
     }
     printf("\n");
@@ -35,7 +35,7 @@ int main()
 
     for (int currentNum = firstNum; currentNum <= secNum; currentNum++)
     {
-        if (isPalindromeRecursion(currentNum))
+        if (isPalindrome(currentNum))
             printf("%d ", currentNum);
     }
 

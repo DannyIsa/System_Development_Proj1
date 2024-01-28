@@ -1,33 +1,60 @@
 #include "NumClass.h"
 #include <stdio.h>
-int isArmstrongRecursion(int x)
-{
-    int xLength = numLength(x);
-    int xSum = getSum(x, xLength);
 
-    if (xSum == x)
+int power(int x, int y);
+int reverse(int, int);
+int isArmstrongRec(int, int);
+
+int isPalindrome(int num)
+{
+    int temp = reverse(num, 0);
+    if (num == temp)
         return 1;
-    return 0;
-}
-
-int getSum(int num, int numLength)
-{
-    if (num == 0)
+    else
         return 0;
-    return power((num % 10), numLength) + getSum(num / 10, numLength);
 }
 
-int isPalindromeRecursion(int x)
-{
-    int xLength = numLength(x);
-    return checkIsPalindromeRecursion(x, xLength);
-}
-
-int checkIsPalindromeRecursion(int num, int numLength)
+int reverse(int num, int temp)
 {
     if (num == 0)
+        return temp;
+    temp = (temp * 10) + (num % 10);
+    return reverse(num / 10, temp);
+}
+
+int isArmstrong(int num)
+{
+    int sum = 0, count = 0, temp;
+    temp = num;
+    while (temp != 0)
+    {
+        count = count + 1;
+        temp = temp / 10;
+    }
+    sum = isArmstrongRec(num, count);
+    if (sum == num)
         return 1;
-    int firstNum = num % 10;
-    int lastNum = num / power(10, numLength - 1);
-    return (firstNum == lastNum) && (checkIsPalindromeRecursion((num % power(10, numLength - 1)) / 10, numLength - 2));
+    else
+        return 0;
+}
+
+int isArmstrongRec(int num, int count)
+{
+    int reminder, sum = 0;
+    if (num > 0)
+    {
+        reminder = num % 10;
+        sum = sum + power(reminder, count);
+        sum += isArmstrongRec(num / 10, count);
+        return sum;
+    }
+    else
+        return 0;
+}
+
+int power(int x, int y)
+{
+    if (y == 0)
+        return 1;
+    return (x * power(x, y - 1));
 }
