@@ -10,7 +10,7 @@ int isPrime(int x)
     return 1;
 }
 
-#include "library.h"
+#include "NumClass.h"
 
 int isStrong(int x)
 {

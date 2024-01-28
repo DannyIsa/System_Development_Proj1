@@ -1,4 +1,4 @@
-#include "library.h"
+#include "NumClass.h"
 #include <stdio.h>
 int isArmstrongRecursion(int x)
 {

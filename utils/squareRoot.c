@@ -4,12 +4,12 @@ int squareRoot(int x)
     {
         return -1;
     }
-    double check = num / 2;
+    double check = x / 2;
     int prevCheck;
     do
     {
         prevCheck = check;
-        check = (check + num / check) / 2;
-    } while (check * check != num && check != prevCheck);
+        check = (check + x / check) / 2;
+    } while (check * check != x && check != prevCheck);
     return check;
 }
