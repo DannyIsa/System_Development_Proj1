@@ -6,7 +6,8 @@ recursived: libclassrec.so
 
 loopd: libclassloops.so
 
-# mains: main.o recursives
+mains: main.o recursives
+	gcc -Wall -o mains main.o libclassrec.a
 
 
 ### A Files
@@ -34,7 +35,7 @@ numLength.o: utils/numLength.c
 factorial.o: utils/factorial.c
 	gcc -c utils/factorial.c
 
-### Assignment Functions
+### Files Compile
 main.o: main.c
 	gcc -Wall -c main.c
 
@@ -49,4 +50,4 @@ advancedClassificationRecursion.o: advancedClassificationRecursion.c
 
 ### Clean
 clean:
-	rm *.o *.a
+	rm *.o *.a *.so mains maindloop maindrec
