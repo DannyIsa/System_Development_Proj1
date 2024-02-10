@@ -1,1 +1,0 @@
-# Danniel Isakov & Koren Abdush
